@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+body {
+  @apply bg-white text-gray-700 container mx-auto dark:bg-gray-900 dark:text-gray-300 max-w-2xl
+}
+
+hr {
+  @apply my-8 border-gray-200 dark:border-gray-800
+}
